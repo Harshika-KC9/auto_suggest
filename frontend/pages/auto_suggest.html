@@ -23,6 +23,31 @@
         text-align:center;
         margin-top: 100px;
     }
+    .first-word{
+        color:blue;
+        font-size:50px;
+    }
+    .second-word{
+        font-size:30px;
+    }
+    .description{
+        color:gray;
+    }
+    .lens{
+      position:relative;
+      left:40px;
+    }
+    .search-box{
+      padding:15px 15px 15px 45px;
+      border-radius:30px;
+      width:50%
+    }
+    #suggestion-box{
+        border: 1px solid #130101;
+        width:53%;
+        position:relative;
+        left:24.2%
+    }
 </style>
 <body>
     <div>
@@ -30,9 +55,16 @@
     <span class="right-bar">&#x2022; online | &#x1F552; -ms</span>
     </div>
     <div class="search-section">
-    <h1>Hit It</h1>
-    <p> One million phrases. Four algorithms. Prefix Based Auto Suggest</p>
-    <span>&#128269;<input placeholder="Start typing to search phrases"></span>
+    <span class="first-word">Hit</span>
+    <span class="second-word">It</span>
+    <p class="description"> One million phrases. Four algorithms. Prefix Based Auto Suggest</p>
+    <span>
+        <span class="lens">&#128269;</span>
+        <input class="search-box" placeholder="Start typing to search phrases">
+    </span>
+    <div id="suggestion-box">
+Suggestion Box
+    </div>
     </div>
 </body>
 </html>
